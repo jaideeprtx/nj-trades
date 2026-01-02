@@ -1,0 +1,19 @@
+{
+  "name": "nj-trades-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "init-db": "node src/db/init.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "node-cache": "^5.1.2",
+    "node-cron": "^3.0.3",
+    "socket.io": "^4.8.1",
+    "xml2js": "^0.6.2"
+  }
+}

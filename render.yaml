@@ -1,0 +1,12 @@
+services:
+  # Backend API + Frontend (single service)
+  - type: web
+    name: nj-trades
+    runtime: node
+    buildCommand: npm install && cd client && npm install && npm run build
+    startCommand: node server/src/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
